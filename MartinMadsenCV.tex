@@ -1,11 +1,12 @@
 \documentclass[margin,line,a4paper]{resume}
  
-\usepackage[english,danish]{babel}
-\usepackage[T1]{fontenc}
+\usepackage{polyglossia}
+\setdefaultlanguage{danish}
 \usepackage[none]{hyphenat}
 \usepackage{graphicx,wrapfig}
 \usepackage{url}
 \usepackage{fontspec}
+\usepackage{xltxtra}
 \setmainfont{Minion Pro}
 \usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV,
 linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
@@ -37,21 +38,26 @@ linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 
     Født og opvokset i Danmark til jeg var 5 år, hvorefter vi havde et
     9-år langt ophold i udlandet, i både England og USA. Så man kan i
-    hvert fald sige, at jeg er vant til at tale engelsk og dansk med de lokale, samt tilpasse mig til nye miljøer. Jeg
-    bor selvstændigt og vil gerne arbjede inden for computere eller
-    med mennesker i it-branchen som et supplement til mit studie.
+    hvert fald sige, at jeg er vant til at tale engelsk og dansk med
+    de lokale, samt tilpasse mig til nye miljøer. Jeg bor selvstændigt
+    og vil gerne arbejde inden for computere eller med mennesker i
+    it-branchen som et supplement til mit studie.
 
     I øjeblikket studerer jeg datalogi på Aalborg Universitet. Her går
-    jeg på 3. semester og engagerer mig i nogle spændende
-    projekter baseret på en dynamisk grundlag bygget op på problembaseret gruppearbejde!
+    jeg på 4. semester og engagerer mig i nogle spændende projekter
+    baseret på en dynamisk grundlag bygget op på problembaseret
+    gruppearbejde! Lige nu designer vi f.ek.\ et programmeringssprog,
+    der skal gøre det lettere, at hurtigt kunne skrive brætspil for
+    derefter at spille dem direkte, enten mod computeren eller en anden
+    spiller.
 
     Jeg har dansk kørekort til bil.
 
     \section{\mysidestyle Uddannelse} \textbf{Aalborg Universitet - Kandidat i Datalogi}
-    (2011 - 2016) Jeg afslutter 4. semester i juni 2013.
+    (2011 - 2016) Jeg afslutter 4.\ semester i juni 2013.
 
     \textbf{EUC Nord - HTX} (2008 - 2011) Teknisk gymnasium i Hjørring. Naturvidenskabelig
-    linje (Matematik A, Fysik A).
+    linje (Matematik A, Fysik A) samt Dansk A med Engelsk A som valgfag.
 
     \textbf{Bagterpskolen} (2006 - 2008) Folkeskole i Hjørring.
 
@@ -62,7 +68,8 @@ linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \section{\mysidestyle Professionel\\erfaring}\vspace{1mm}
 \begin{description}
 
-  \item[2012 sept $\rightarrow$ nu] Studenterprogrammør hos Falck Healthcare a/s.
+  \item[2012 sept $\rightarrow$ nu] Studenterprogrammør hos Falck
+Healthcare a/s. Hovedsaglig webudvikling i Ruby on Rails.
 
 
   \item[2010 sept $\rightarrow$ nu] Startede enkeltmandsvirksomheden
@@ -85,12 +92,12 @@ linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
     nye software- og datalogistuderende på Aalborg Universitet. Her blev jeg også koblet på en
     gruppe nye studerende, som jeg fik sat godt i gang med deres nye studieliv.
   \item[2012 juli $\rightarrow$ nu] Mentor, Projekt \href{http://www.urk.dk/solskinsunge/}{Solskinsunge} 2012. Frivillig arbejde,
-    hvor vi arrangerer sociale arrangementer med socialt udsatte børn fra Stolepedalskolen
+    hvor vi arrangerer sociale arrangementer med socialt udsatte børn fra Tornhøjskolen 
     i Aalborg Øst.
-  \item[2012 sept $\rightarrow$ nu] Sponsoransvarlig, UNF Software Development Camp 2013. Frivillig
-    arbejde for Ungdommens Naturvidenskabelig Forening (UNF), hvor jeg opretter og holder
-    kontakten med de forskellige sponsorer, der sørger for, at campen kan holdes
-    kørende.
+  %\item[2012 sept $\rightarrow$ nu] Sponsoransvarlig, UNF Software Development Camp 2013. Frivillig
+  %  arbejde for Ungdommens Naturvidenskabelig Forening (UNF), hvor jeg opretter og holder
+  %  kontakten med de forskellige sponsorer, der sørger for, at campen kan holdes
+  %  kørende.
 \end{description}
 
 \section{\mysidestyle Kompetencer}\vspace{1mm} Jeg kan
@@ -99,17 +106,18 @@ interesserer mig mest og vil blive listede her:
 \vspace{0.5cm}
 \begin{description}
 
-  \item[Styresystemer] Grundlæggende forståelse for de fleste
-    typer af Unix-lignende systemer: Ubuntu, Debian, CentOS og Arch Linux, Mac OS X.
+  \item[Styresystemer] Windows 7, Windows 8, grundlæggende forståelse
+  for de fleste Unix-lignende systemer: Ubuntu, Debian, CentOS og Arch
+  Linux, Mac OS X.
 
-  \item[Servere og databaser] Nginx, openSSH, CUPS, MySQL.
+  \item[Servere og databaser] Nginx. 
 
   \item[CMS-systemer] Wordpress, phpBB, Octopress.
 
   \item[Versionskontrolsystemer] Git, SVN.
 
-  \item[Programmering-, scripting- og markupssprog] \LaTeX,
-    HTML, CSS, ANSI C, C\#, Javascript, Ruby og kendskab til jQuery \& node.js.
+  \item[Programmering-, scripting- og markupssprog] \LaTeX{} og \XeTeX{},
+    HTML, CSS, ANSI C, C\#, Javascript og jQuery, Ruby og Ruby on Rails. 
 
 \end{description}
 
@@ -118,10 +126,10 @@ Mit modersmål er dansk, men næsten alt det jeg laver er på engelsk,
 både i forbindelse med computere men også kommunikationen med
 internationale venner, samt i en akademisk forstand på universitetet.
 
-\textbf{Dansk:} modersmål\\
-\textbf{Engelsk sprogligt:} flydende\\
-\textbf{Engelsk skriftligt:} flydende\\
-\textbf{Engelsk læseforstand:} høj\\
+\textbf{Dansk:} modersmål \\
+\textbf{Engelsk sprogligt:} flydende \\
+\textbf{Engelsk skriftligt:} flydende \\
+\textbf{Engelsk læseforstand:} høj \\
 
 \section{\mysidestyle Interesser}
 
@@ -133,4 +141,3 @@ for trykke Danmark. Heldigvis har jeg fundet nogle gode venner i udlandet, som j
 
 \end{resume}
 \end{document}
-
