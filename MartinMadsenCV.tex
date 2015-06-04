@@ -1,124 +1,122 @@
-\documentclass[margin,line]{resume}
- 
-\usepackage{polyglossia}
-\setdefaultlanguage[variant=us]{english}
-\usepackage[none]{hyphenat}
-\usepackage{graphicx,wrapfig}
-\usepackage{url}
-\usepackage{fontspec}
-\usepackage{xltxtra}
-\setmainfont{Minion Pro}
-\usepackage[activate={true,nocompatibility},final,factor=1100,stretch=10,shrink=10,expansion=false,verbose=silent]{microtype}
-\usepackage[colorlinks=true, pdfstartview=FitV,
-linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
-\frenchspacing
+\documentclass{afriggeri-cv/friggeri-cv}
+
+\newcommand{\aau}{%
+  Aalborg University (AAU), Denmark
+}
  
 \begin{document}
-\raggedright%
-{\sc \Large Curriculum Vitae~---~Martin Bjeldbak Madsen}
-\begin{resume}
-    \vspace{0.5cm}
-    \begin{wrapfigure}{4}{0.4\textwidth}
-         \vspace{-1cm}
-        \begin{center}
-        \includegraphics[width=0.4\textwidth]{moi.png}
-        \end{center}
-         \vspace{-3.5cm}
-    \end{wrapfigure}
+\header{martin}{madsen}
+       {graduate student of computer science}
 
-\section{\mysidestyle{} Personal\\Information}%\vspace{2mm}
-    Martin Bjeldbak Madsen\\
-    June 9th, 1992 (22 years old)\\ 
-    3971 Haines St., Apt A\\
-    92109 San Diego, CA \\
-    Phone: (951) 249--2631\\
-    \href{mailto:martinbmadsen@gmail.com}{martinbmadsen@gmail.com}\\
-    \href{http://martinbmadsen.dk}{martinbmadsen.dk}\\
-    \vspace{0.5cm}
-    \href{http://dk.linkedin.com/in/martinbmadsen/}{linkedin.com/in/martinbmadsen}\\
-    \href{https://github.com/martinbmadsen}{github.com/martinbmadsen}\\
-    \href{https://keybase.io/martinb}{keybase.io/martinb}\\
-    \href{https://twitter.com/fapper}{twitter.com/fapper}
+\begin{aside}
+  \section{about}
+    3971 Haines St, Apt A
+    92109 San Diego, California
+    USA
+    ~
+    \phone{+1 (951) 249-2631}
+    \email{me@martinbmadsen.dk}
+    \website{martinbmadsen.dk}
+    \twitter{fapper}
+    \facebook{martinbjeldbak}
+    \github{martinbmadsen}
+    \linkedin{martinbmadsen}
+  \section{languages}
+    bilingual danish/english
+  \section{programming}
+    JavaScript
+    (ES6, node.js, jQuery)
+    C, C$\sharp$, Java
+    Python, Ruby
+    (Ruby on Rails)
+    \LaTeX\ and \XeTeX
+    HTML, CSS3
+    Git, SVN
+    Haskell (learning)
+    Swift (learning)
+    Software engineering
+    Windows, OS X, Unix
+\end{aside}
 
-    Hello there! My name's Martin and I was born and raised in Denmark until I was 5 years of age, whereafter my family moved for a total of 9 years abroad, 4 of which were spent in England, and 5 in the US\@. That means that I've learned English and Danish speaking with locals, and I can quickly adapt to new cultural environments.
+\section{education}
 
-    Currently I'm taking the first year of my masters degree in Computer Science from Aalborg University abroad at the University of California, San Diego. I sincerely hope my CV piques your interest.
+\begin{entrylist}
+  \entry
+    {since 2014}
+    {Studying abroad}
+    {University of California, San Diego}
+    {Accredited as part of the first year of my master's degree from Aalborg University}
+  \entry
+    {since 2014}
+    {M.Sc. {\normalfont in Computer Science}}
+    {\aau}
+    {Majoring in Computer Science (120 ECTS)\\
+    Specializing in Machine Intelligence}
+  \entry
+    {2011-2014}
+    {B.Sc. {\normalfont in Computer Science}}
+    {\aau}
+    {Majoring in Computer Science (180 ECTS)}
+  \entry
+    {2008-2011}
+    {Student}
+    {EUC Nord~-~Technical Gymnasium of Hjørring}
+    {Focus in physics and engineering}
+\end{entrylist}
 
-    The final project of my bachelors degree in computer science from Aalborg University involved measuring diversity amongst artificial neural networks used in evolutionary algorithms to train neural networks. We are in the process of getting the article published.
-    
-    %I've had a Danish driver's license for 4 years.
-    I hold Danish and American driver's licenses.
+\section{experience}
 
-\section{\mysidestyle{} Education}
-    \textbf{University of California, San Diego~---~Computer Science}
-    (2014--2015) Taking graduate level courses in Computer Science in connection with the first of my master's degree from Aalborg University.
+\begin{entrylist}
+  \entry
+    {2012-2014}
+    {Student Software Developer}
+    {Falck Healthcare a/s}
+    {Development of Ruby on Rails-based system used daily by ca.\ 40 of Falck's physiotherapists to journal their patients' treatments and wellbeing.}
+  \entry
+    {2010-2014}
+    {Founder}
+    {Divambu (shut down)}
+    {Ran my own small company developing and hosting web sites for clients.}
+  \entry
+    {2008-2010}
+    {Service Worker}
+    {Fakta a/s}
+    {Customer service, fulfilling everyday tasks required to run a busy grocery store.} 
+\end{entrylist}
 
-    \textbf{Aalborg University~---~Master of Science, Computer Science}
-    (2014--2016) Working on a master's degree in Computer Science, studying abroad the first year.
+\section{other activities}
+\begin{entrylist}
+  \entry
+    {2013-2014}
+    {Student member of the Study Board of Computer Science}
+    {\aau}
+    {Elected position. Handling of educations within Computer Science curricula at the university, quality assurance of education, handling of exemptions, etc.}
+  \entry
+    {2012-2014}
+    {Volunteer mentor}
+    {\href{http://www.urk.dk/hvad-goer-vi/mentoring-og-raadgivning/solskinsunge/}{Projekt Solskinsunge 2012}}
+    {We arranged bi-monthly social gatherings for teenagers aged 15-18, most of who were second generation immigrants.}
+  
+\end{entrylist}
 
-    \textbf{Aalborg University~---~Bachelor of Science, Computer Sience}
-    (2011--2014) Bachelor's degree in Computer Science (180 ECTS credits). I graduated with an average of B on the European ECTS scale.      
+\section{projects}
+\begin{entrylist}
+  \entry
+    {2015}
+    {XQuery Processor}
+    {UC San Diego, \github{martinbmadsen/xquery-processor}}
+    {Implemented a subset of the XQuery and XPath XML query languages in Java.}
+  \entry
+    {2014}
+    {Diversity Measurement in Genetic Algorithms}
+    {AAU, \href{http://martinbmadsen.dk/bachelor.pdf}{martinbmadsen.dk/bachelor.pdf}}
+    {Concluded my B.Sc.\ degree. Currently in the process of getting published.}
+  \entry
+    {2014}
+    {OpenTracker}
+    {\github{martinbmadsen/openTrackerAPI}}
+    {Rails app and corresponding Python plugin for the racing simulator video game Assetto Corsa, allowing anyone to view location and information of racers on track in real-time.}
+\end{entrylist}
 
-    \textbf{EUC Nord~---~HTX} (2008--2011) Technical gymnasium in Hjørring, Denmark. I took the highest level Math, Physics, English, Electronics, and Danish possible.
-    
-    \textbf{Bagterpskolen} (2006--2008) Danish Folkeskole Education in Hjørring, Denmark.
-
-    \textbf{J.\ R.\ Gerrits Middle School} (2003--2006) Kimberly, Wisconsin, USA\@.
-
-\section{\mysidestyle{} Professional\\experience}\vspace{1mm}
-\begin{description}
-
-  \item[September 2012 $\rightarrow$ September 2014] Student software developer at Falck (30k employees) in their Falck Healthcare subsidiary. I developed new features and maintained a Rails web application used daily by around 40 of Falck's physiotherapists to journal their patients' developments. I was in constant contact with the physiotherapists, listening to their feedback and, acting and implementing features to enable them to more efficiently get their job done.
-
-  \item[Sept 2010 $\rightarrow$ January 2014] Ran my own company,
-  \emph{Divambu}. I developed and hosted web sites for small companies.
-
-  \item[October 2008 $\rightarrow$ June 2010] Service worker at Fakta
-  a/s (part of Coop Danmark, 36k employees). I was in direct contact
-  with customers and fulfilled everyday tasks required to run a busy
-  grocery store. I worked during evenings, weekends, and holidays
-  alongside attending school full-time while I was under 18.
-\end{description}
-
-\section{\mysidestyle{} Other activities}\vspace{1mm}
-\begin{description}
-  \item[July 2012 $\rightarrow$ March 2014] Mentor, Project
-    \href{http://www.urk.dk/solskinsunge/}{Solskinsunge} 2012. Volenteer
-    work, where we arranged bi-monthly social gatherings for teenagers aged
-    15--18, most of which are second generation immigrants.
-
-  \item[January 2013 $\rightarrow$ September 2014] Elected student member of the
-  Study Board of Computer Science at Aalborg University. The Study Board
-  consists of 5 students and 5 professors, representing the student body
-  and faculty groups. Here, we took on responsibilities
-  for undergraduate and graduate programs within the Computer Science
-  group and their curricular. We discussed, among others, qualification
-  and exemption aplications, quality assurance, etc.
-\end{description}
-
-\section{\mysidestyle{} Skills} \vspace{1mm}
-I love learning new techniques, methods, and tools, but there are a few technologies and systems I have more experience with than others:
-\vspace{0.5cm}
-\begin{description}
-  \item[Operating systems] Intermediate understanding of most Unix-like systems: Ubuntu, Debian, CentOS, Arch Linux, Mac OS X.
-  \item[Servers and databases] Nginx, Postgres, MySQL\@.
-  \item[CMS-systems] I've set up systems with Wordpress, phpBB, Octopress.
-  \item[Revision control] Git, SVN\@.
-  \item[Programming, scripting, and markup languages] Python, \LaTeX\ and \XeTeX, HTML, CSS, C, C$\sharp$, Java, JavaScript and jQuery, Ruby and Ruby on Rails. Currently learning: Haskell, Swift.
-\end{description}
-
-\section{\mysidestyle{} Language}
-My native language is Danish, but almost everything I write and read is in English.
-
-\begin{description}
-  \item[Danish] mother tongue
-  \item[Spoken English] fluent
-  \item[Written English] fluent 
-\end{description}
-
-\section{\mysidestyle{} Interests}
-I love to tea culture and reading books of all types. As far as sports go, I only follow Formula 1. Also, I enjoy working on small projects of my own to help broaden my interests and knowledge, such as toying with iOS apps, or working on a web app in a new technology. Keeping my body healthy and in shape is also important to me, as I believe it keeps my mind fit and open, too.
-
-%There is also nothing better than traveling the world, so I try to do that as much as possible, and thankfully due to my fantastic friends, I've had quite a few amazing experiences traveling to visit them. I also enjoy electronic and classical music. 
-\end{resume}
+\dots and many others! I contribute as much as I can to open source and work on other projects for fun. For more examples, feel free to check out my GitHub profile linked above.
 \end{document}
