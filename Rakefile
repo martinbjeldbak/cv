@@ -11,16 +11,14 @@ task :default => [:compile]
 #end
 
 task :compile do
-  root = 'master'
+  task(:clean).invoke
+  root = 'martinmadsenCV'
   compiler = 'xelatex'
-  options = '-shell-escape'
-  bib = 'bibtex'
+  options = '-shell-escape -interaction nonstopmode'
 
   compileStr = '%s %s %s' % [compiler, options, root]
-  bibtexStr = '%s %s' % [bib, root]
 
   system(compileStr + ' > /dev/null')
-  system(bibtexStr + ' > /dev/null')
   system(compileStr + ' > /dev/null')
   system(compileStr + ' > output')
 
