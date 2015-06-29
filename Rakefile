@@ -31,7 +31,7 @@ task :clean do
   tmpFiles = %w[aux log nav snm tdo pyg 
               toc vrb bbl bcf blg out bib.bak thm
               run.xml ].map{|f| '*.' + f}.join(' ')
-  tmpFolders = %w[_minted-master/].join(' ')
+  tmpFolders = %w[].join(' ')
   tmpFull  = %W[output].join(' ')
 
   system("#{rm} #{tmpFolders} #{tmpFiles} #{tmpFull}") 
