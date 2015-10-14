@@ -3,3 +3,5 @@
 *.out
 *.run.xml
 *.bcf
+*.fls
+*.fdb_latexmk
