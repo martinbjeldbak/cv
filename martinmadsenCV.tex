@@ -1,5 +1,18 @@
 \documentclass{afriggeri-cv/friggeri-cv}
 
+\usepackage{fontspec}
+
+\defaultfontfeatures{Path=fonts/}
+\usepackage{fontawesome}
+
+\setmathfont{XITS Math}
+\newfontfamily\bodyfont[]{LiberationSans-Regular}
+\newfontfamily\thinfont[]{LiberationSans-Regular}
+\newfontfamily\headingfont[]{LiberationSans-Bold}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text, Color=textcolor,Path=fonts/]{LiberationSans-Regular}
+
 \newcommand{\aau}{%
   Aalborg University (AAU), Denmark
 }
@@ -10,27 +23,28 @@
 
 \begin{aside}
   \section{about}
-    502/25 Walsh Street
-    Milton 4064
+    7/56 Hood St
+    Sherwood 4075
     Queensland
     Australia
     ~
-    26 years old
+    28 years old
     \phone{+61 413 043 210}
     \website{martinbjeldbak.com}
     \github{martinbjeldbak}
     \linkedin{martinbjeldbak}
   \section{languages}
     bilingual Danish/English
-    IELTS score: 8.0
+    IELTS score: 8.5
   \section{programming}
     Ruby on Rails
-    Heroku, AWS, SQL
+    Heroku, AWS (EC2, RDS, ECS, S3), SQL
+    CircleCI, GitHub Actions
     \LaTeX, HTML, Git
     JavaScript (ES6, React)
     OS X, Unix
   \section{interests}
-    machine learning
+    machine learning, devOps
     TDD, functional programming
     service oriented architecture
     web development
@@ -103,7 +117,7 @@
   \entry
     {2016}
     {A Hierarchical Tree Distance Measure for Classification}
-    {\href{http://martinbjeldbak.com/thesis.pdf}{martinbjeldbak.com/thesis.pdf}}
+    {\href{https://martinbjeldbak.com/thesis.pdf}{martinbjeldbak.com/thesis.pdf}}
     {Concluded my M.Sc.\ degree. Published in \href{https://www.scitepress.org/Papers/2017/61985/}{Proceedings of the 6th International Conference on Pattern Recognition Applications and Methods~-~Volume 1: ICPRAM 2017, pages 502-509}}
 \end{entrylist}
 
