@@ -1,9 +1,10 @@
+---
 name: Build CV PDF
 
 on:
   push:
   schedule:
-    - cron:  '0 20 * * *' # run every day at 8:00pm
+    - cron: '0 20 * * *' # run every day at 8:00pm
 
 jobs:
   build:
@@ -26,4 +27,3 @@ jobs:
         with:
           name: CV
           path: martinmadsenCV.pdf
-
