@@ -1,17 +1,18 @@
+% !TeX root = martinmadsenCV.tex
+% !TEX program = xelatex
+
 \documentclass{afriggeri-cv/friggeri-cv}
 
 \usepackage{fontspec}
-
-\defaultfontfeatures{Path=fonts/}
 \usepackage{fontawesome}
 
 \setmathfont{XITS Math}
-\newfontfamily\bodyfont[]{LiberationSans-Regular}
-\newfontfamily\thinfont[]{LiberationSans-Regular}
-\newfontfamily\headingfont[]{LiberationSans-Bold}
+\newfontfamily\bodyfont[]{Helvetica Neue}
+\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
+\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor,Path=fonts/]{LiberationSans-Regular}
+\setmainfont[Mapping=tex-text, Color=textcolor,SizeFeatures={Size=8}]{Helvetica Neue Light}
 
 \newcommand{\aau}{%
   Aalborg University (AAU), Denmark
@@ -19,16 +20,14 @@
 
 \begin{document}
 \header{martin}{madsen}
-{software developer, me@martinbjeldbak.com}
+{software developer, \href{mailto:me@martinbjeldbak.com}{me@martinbjeldbak.com}}
 
 \begin{aside}
   \section{about}
-    7/56 Hood St
-    Sherwood 4075
-    Queensland
-    Australia
-    ~
-    28 years old
+    melbourne
+    australia
+    \hfill
+    29 years old
     \phone{+61 413 043 210}
     \website{martinbjeldbak.com}
     \github{martinbjeldbak}
@@ -38,12 +37,14 @@
     IELTS score: 8.5
   \section{programming}
     Ruby on Rails
+    Golang
     Heroku, AWS (EC2, RDS, ECS, S3), SQL
-    CircleCI, GitHub Actions
+    GitHub Actions
     \LaTeX, HTML, Git
     JavaScript (ES6, React)
     OS X, Unix
   \section{interests}
+    continuous delivery
     machine learning, devOps
     TDD, functional programming
     service oriented architecture
@@ -55,23 +56,27 @@
 \begin{entrylist}
   \entry%
     {since 2020}
-    {Engineer}
+    {Software Engineer}
     {\href{https://www.anz.com.au}{ANZ Bank}, Melbourne, Australia}
-    {Software engineer working on the ANZx team within ANZ.}
+    {Working on \href{https://www.anz.com.au/plus}{ANZ Plus} as software engineer embedded in an
+     integration services team. I am responsible for implementing \& maintaining DevSecOps pipelines
+     for feature engineers and developing microservices, mainly using GitHub Actions and Golang, respectively.}
   \entry%
-    {2016 - 2020}
+    {2016--2020}
     {Lead Software Developer, Backend}
     {\href{https://netengine.com.au/}{NetEngine}, Brisbane, Australia}
-    {Ruby on Rails software developer working with our clients to build web-based systems across
-      many different industries, from finance to flood mapping. I work on setting up infrastructure
-      in AWS using CloudFormation, to building service objects in Rails and avoiding circular dependencies. I also partake in non-technical activities such as business planning, training new backend developers, etc.}
+    {Ruby on Rails software developer working with consultancy clients to build web-based systems across
+      many different industries, from finance to flood mapping. I worked on setting up infrastructure
+      in AWS to building GraphQL Rails APIs.
+      I also partook in non-technical activities such as business planning, training new backend developers,
+      etc. Clients included \href{https://www.apollocamper.com}{Apollo Motorhome Holidays}.}
   \entry%
-    {2012-2014}
+    {2012--2014}
     {Student Software Developer}
-    {\href{http://www.falck.com/en/company/organisation/business-areas/healthcare}{Falck Healthcare a/s}, Aalborg, Denmark}
+    {\href{https://www.falck.com/services/healthcare}{Falck Healthcare a/s}, Aalborg, Denmark}
     {Development of Ruby on Rails-based system used daily by ca.\ 40 of Falck's physiotherapists to journal their patients' treatments and wellbeing.}
-  \entry
-    {2010-2014}
+  \entry%
+    {2010--2014}
     {Founder}
     {Divambu (shut down)}
     {Ran my own small company developing and hosting web sites for clients.}
@@ -80,24 +85,24 @@
 \section{education}
 
 \begin{entrylist}
-  \entry
-    {2014-2016}
-    {M.Sc.\ {\normalfont in Computer Science}}
+  \entry%
+    {2014--2016}
+    {M.Sc.\ {\normalfont\ in Computer Science}}
     {\aau}
     {Majoring in Computer Science (120 ECTS)\\
     Specializing in Machine Intelligence}
-  \entry
-    {2014-2015}
+  \entry%
+    {2014--2015}
     {Studying abroad}
     {University of California, San Diego (UCSD), USA}
     {Fully accredited as part of the first year of my master's degree from Aalborg University}
-  \entry
-    {2011-2014}
-    {B.Sc.\ {\normalfont in Computer Science}}
+  \entry%
+    {2011--2014}
+    {B.Sc.\ {\normalfont\ in Computer Science}}
     {\aau}
     {Majoring in Computer Science (180 ECTS)}
-  \entry
-    {2008-2011}
+  \entry%
+    {2008--2011}
     {Student}
     {EUC Nord~-~Technical Gymnasium of Hjørring, Denmark}
     {Focus in physics and engineering}
@@ -105,8 +110,8 @@
 
 \section{other activities}
 \begin{entrylist}
-  \entry
-    {2013-2014}
+  \entry%
+    {2013--2014}
     {Student member of the Study Board}
     {\aau}
     {Elected position. Handling of educations within Computer Science curricula at the university, quality assurance of education, handling of exemptions, etc.}
@@ -114,12 +119,12 @@
 
 \section{projects}
 \begin{entrylist}
-  \entry
+  \entry%
     {2015}
     {XQuery Processor}
     {University of California, San Diego, \github{martinbjeldbak/xquery-processor}}
     {Implemented a subset of the XQuery and XPath XML query languages in Java}
-  \entry
+  \entry%
     {2016}
     {A Hierarchical Tree Distance Measure for Classification}
     {\href{https://martinbjeldbak.com/thesis.pdf}{martinbjeldbak.com/thesis.pdf}}
