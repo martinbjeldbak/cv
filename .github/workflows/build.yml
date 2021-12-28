@@ -7,6 +7,18 @@ on:
     - cron: '0 20 * * *' # run every day at 8:00pm
 
 jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Lint with chktex
+        uses: j2kun/chktex-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -19,11 +31,11 @@ jobs:
       - name: Compile document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: martinmadsenCV.tex
+          root_file: MartinMadsenCV.tex
           latexmk_use_xelatex: true
 
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
           name: CV
-          path: martinmadsenCV.pdf
+          path: MartinMadsenCV.pdf

@@ -3,7 +3,7 @@
 
 My CV, using [my](https://github.com/martinbjeldbak/afriggeri-cv) fork of [ashee/cv](https://github.com/ashee/cv), which uses XeTeX adds [font-awesome](http://fortawesome.github.io/Font-Awesome/) social icons, removes bibliography loading, loads [microtype](https://www.ctan.org/pkg/microtype?lang=en), Fontspec to use the Helvetica font type, among others.
 
-![Sample image of generated CV](https://github.com/martinbjeldbak/cv/files/7782071/martinmadsenCV.pdf)
+![Sample image of generated CV](https://github.com/martinbjeldbak/cv/files/7783291/martinmadsenCV.pdf)
 
 ## Installation
 

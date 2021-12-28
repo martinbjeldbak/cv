@@ -3,16 +3,17 @@
 
 \documentclass{afriggeri-cv/friggeri-cv}
 
+\defaultfontfeatures{Path=fonts/}
 \usepackage{fontspec}
 \usepackage{fontawesome}
 
 \setmathfont{XITS Math}
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[]{LiberationSans-Regular}
+\newfontfamily\thinfont[]{LiberationSans-Regular}
+\newfontfamily\headingfont[]{LiberationSans-Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor,SizeFeatures={Size=8}]{Helvetica Neue Light}
+\setmainfont[Mapping=tex-text, Color=textcolor,Path=fonts/]{LiberationSans-Regular}
 
 \newcommand{\aau}{%
   Aalborg University (AAU), Denmark
@@ -45,7 +46,8 @@
     OS X, Unix
   \section{interests}
     continuous delivery
-    machine learning, devOps
+    machine learning
+    devOps
     TDD, functional programming
     service oriented architecture
     web development
@@ -75,11 +77,6 @@
     {Student Software Developer}
     {\href{https://www.falck.com/services/healthcare}{Falck Healthcare a/s}, Aalborg, Denmark}
     {Development of Ruby on Rails-based system used daily by ca.\ 40 of Falck's physiotherapists to journal their patients' treatments and wellbeing.}
-  \entry%
-    {2010--2014}
-    {Founder}
-    {Divambu (shut down)}
-    {Ran my own small company developing and hosting web sites for clients.}
 \end{entrylist}
 
 \section{education}
@@ -101,20 +98,6 @@
     {B.Sc.\ {\normalfont\ in Computer Science}}
     {\aau}
     {Majoring in Computer Science (180 ECTS)}
-  \entry%
-    {2008--2011}
-    {Student}
-    {EUC Nord~-~Technical Gymnasium of Hjørring, Denmark}
-    {Focus in physics and engineering}
-\end{entrylist}
-
-\section{other activities}
-\begin{entrylist}
-  \entry%
-    {2013--2014}
-    {Student member of the Study Board}
-    {\aau}
-    {Elected position. Handling of educations within Computer Science curricula at the university, quality assurance of education, handling of exemptions, etc.}
 \end{entrylist}
 
 \section{projects}
@@ -122,12 +105,12 @@
   \entry%
     {2015}
     {XQuery Processor}
-    {University of California, San Diego, \github{martinbjeldbak/xquery-processor}}
+    {UC San Diego, \github{martinbjeldbak/xquery-processor}}
     {Implemented a subset of the XQuery and XPath XML query languages in Java}
   \entry%
     {2016}
     {A Hierarchical Tree Distance Measure for Classification}
-    {\href{https://martinbjeldbak.com/thesis.pdf}{martinbjeldbak.com/thesis.pdf}}
-    {Concluded my M.Sc.\ degree. Published in \href{https://www.scitepress.org/Papers/2017/61985/}{Proceedings of the 6th International Conference on Pattern Recognition Applications and Methods~-~Volume 1: ICPRAM 2017, pages 502-509}}
+    {\href{https://martinbjeldbak.com/thesis.pdf}{thesis.pdf}}
+    {Concluded my M.Sc.\ degree. Published in \href{https://www.scitepress.org/Papers/2017/61985/}{Proceedings of the 6th International Conference on Pattern Recognition Applications and Methods~-~Volume 1: ICPRAM 2017, pages 502--509}}
 \end{entrylist}
 \end{document}
