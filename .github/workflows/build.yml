@@ -31,11 +31,11 @@ jobs:
       - name: Compile document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: martinmadsenCV.tex
+          root_file: MartinMadsenCV.tex
           latexmk_use_xelatex: true
 
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
           name: CV
-          path: martinmadsenCV.pdf
+          path: MartinMadsenCV.pdf
