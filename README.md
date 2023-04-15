@@ -22,6 +22,8 @@ $ sudo tlmgr install latexmk textpos fontawesome
 $ brew cask install font-xits
 ```
 
+Note: to run `tlmgr` you will need to have [TeX Live](https://www.tug.org/texlive/) installed on your OS.
+
 If you get an error loading FontAwesome (see StackOverflow [here](https://tex.stackexchange.com/questions/132888/fontawesome-font-not-found)), you may need to manually install the fontawesome font from the `fontawesome` TeX package. You can do this by visiting the folder output in `tlmgr info --list fontawesome` containing the `.otf` file and double-clicking on it to install it to your font book.
 
 You should now be able to run make and generate a new PDF.
