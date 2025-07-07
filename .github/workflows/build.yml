@@ -29,7 +29,7 @@ jobs:
           submodules: true
 
       - name: Compile document
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: MartinMadsenCV.tex
           latexmk_use_xelatex: true
