@@ -11,15 +11,23 @@ Ensure you have the submodule initialized for this repository. You can do this o
 Alternatively
 
 ```sh
-$ git submodule init
-$ git submodule update
+git submodule init
+git submodule update
 ```
 
 And ensure you have the dependencies installed
 
+For Linux (I use Arch, btw)
+
 ```sh
-$ sudo tlmgr install latexmk textpos fontawesome
-$ brew cask install font-xits
+yay -S texlive
+tlmgr install latexmk textpos fontawesome
+```
+
+For MacOS
+
+```sh
+brew cask install font-xits
 ```
 
 Note: to run `tlmgr` you will need to have [TeX Live](https://www.tug.org/texlive/) installed on your OS.
@@ -29,14 +37,14 @@ If you get an error loading FontAwesome (see StackOverflow [here](https://tex.st
 You should now be able to run make and generate a new PDF.
 
 ```sh
-$ make
+make
 ```
 
 For hot compilation you can run the below command, which will open your PDF viewer of choice and
 automagically recompile on source file changes.
 
 ```sh
-$ make watch
+make watch
 ```
 
 Voila. If you have any issues with this process, do open a new issue.
