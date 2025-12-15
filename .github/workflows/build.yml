@@ -39,7 +39,7 @@ jobs:
           latexmk_use_xelatex: true
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: CV
           path: MartinMadsenCV.pdf
